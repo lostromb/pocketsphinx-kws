@@ -1,0 +1,14 @@
+﻿Pointers are preserved wherever possible
+
+anytype_s is replaced with object (cast on read)
+
+void* pointers inside hash tables are replaced with object (cast on read)
+
+ckd_calloc for struct arrays is replaced with ckd_alloc.ckd_calloc_struct
+
+glist_t is reduced to its implementation as Pointer<gnode_t>
+
+stat() moved to fstat.cs, and stat structure renamed to "stat_t"
+
+s3cipid => short
+s3wid_t => int

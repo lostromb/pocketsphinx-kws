@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B187E27-D5CC-4633-B8B8-DD6173137B41}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SphinxPortManaged</RootNamespace>
+    <AssemblyName>SphinxPortManaged</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acmod.cs" />
+    <Compile Include="agc.cs" />
+    <Compile Include="bin_mdef.cs" />
+    <Compile Include="bio.cs" />
+    <Compile Include="bitvec.cs" />
+    <Compile Include="byteorder.cs" />
+    <Compile Include="case.cs" />
+    <Compile Include="ckd_alloc.cs" />
+    <Compile Include="cmdln_macro.cs" />
+    <Compile Include="cmd_ln.cs" />
+    <Compile Include="cmn.cs" />
+    <Compile Include="cmn_live.cs" />
+    <Compile Include="CPlusPlus\Arrays.cs" />
+    <Compile Include="CPlusPlus\BasicDebugPointer.cs" />
+    <Compile Include="CPlusPlus\BasicMemoryBlockAccess.cs" />
+    <Compile Include="CPlusPlus\DowncastingMemoryBlockAccess.cs" />
+    <Compile Include="CPlusPlus\IMemoryBlockAccess.cs" />
+    <Compile Include="CPlusPlus\MemoryBlock.cs" />
+    <Compile Include="CPlusPlus\PointerHelpers.cs" />
+    <Compile Include="CPlusPlus\PointerStatistics.cs" />
+    <Compile Include="CPlusPlus\SphinxAssert.cs" />
+    <Compile Include="CPlusPlus\BoxedValue.cs" />
+    <Compile Include="CPlusPlus\cstring.cs" />
+    <Compile Include="CPlusPlus\FILE.cs" />
+    <Compile Include="CPlusPlus\Pointer.cs" />
+    <Compile Include="CPlusPlus\stdio.cs" />
+    <Compile Include="CPlusPlus\UpcastingMemoryBlockAccess.cs" />
+    <Compile Include="dict.cs" />
+    <Compile Include="dict2pid.cs" />
+    <Compile Include="err.cs" />
+    <Compile Include="fe.cs" />
+    <Compile Include="feat.cs" />
+    <Compile Include="fe_interface.cs" />
+    <Compile Include="fe_noise.cs" />
+    <Compile Include="fe_prespch_buf.cs" />
+    <Compile Include="fe_sigproc.cs" />
+    <Compile Include="fe_warp.cs" />
+    <Compile Include="fe_warp_affine.cs" />
+    <Compile Include="fe_warp_inverse_linear.cs" />
+    <Compile Include="fe_warp_piecewise_linear.cs" />
+    <Compile Include="filename.cs" />
+    <Compile Include="genrand.cs" />
+    <Compile Include="glist.cs" />
+    <Compile Include="hash_table.cs" />
+    <Compile Include="CPlusPlus\Program.cs" />
+    <Compile Include="hmm.cs" />
+    <Compile Include="kws_detections.cs" />
+    <Compile Include="kws_search.cs" />
+    <Compile Include="lda.cs" />
+    <Compile Include="listelem_alloc.cs" />
+    <Compile Include="logmath.cs" />
+    <Compile Include="ms_gauden.cs" />
+    <Compile Include="ms_mgau.cs" />
+    <Compile Include="ms_senone.cs" />
+    <Compile Include="phone_loop_search.cs" />
+    <Compile Include="pio.cs" />
+    <Compile Include="profile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="psphinx_trigger.cs" />
+    <Compile Include="ps_lattice.cs" />
+    <Compile Include="ps_mllr.cs" />
+    <Compile Include="ptm_mgau.cs" />
+    <Compile Include="s2_semi_mgau.cs" />
+    <Compile Include="s3types.cs" />
+    <Compile Include="strfuncs.cs" />
+    <Compile Include="Structs\acmod_state_e.cs" />
+    <Compile Include="Structs\acmod_t.cs" />
+    <Compile Include="Structs\agc_t.cs" />
+    <Compile Include="Structs\agc_type_e.cs" />
+    <Compile Include="Structs\alloc_mode.cs" />
+    <Compile Include="Structs\arg_t.cs" />
+    <Compile Include="Structs\bin_mdef_t.cs" />
+    <Compile Include="Structs\cd_tree_t.cs" />
+    <Compile Include="Structs\ciphone_t.cs" />
+    <Compile Include="Structs\cmd_ln_t.cs" />
+    <Compile Include="Structs\cmd_ln_val_t.cs" />
+    <Compile Include="Structs\cmn_t.cs" />
+    <Compile Include="Structs\cmn_type_e.cs" />
+    <Compile Include="Structs\dict2pid_t.cs" />
+    <Compile Include="Structs\dictword_t.cs" />
+    <Compile Include="Structs\dict_t.cs" />
+    <Compile Include="Structs\feat_t.cs" />
+    <Compile Include="Structs\fe_t.cs" />
+    <Compile Include="Structs\fe_warp_conf_t.cs" />
+    <Compile Include="Structs\gauden_dist_t.cs" />
+    <Compile Include="Structs\gauden_t.cs" />
+    <Compile Include="Structs\gnode_t.cs" />
+    <Compile Include="Structs\hash_entry_t.cs" />
+    <Compile Include="Structs\hash_iter_t.cs" />
+    <Compile Include="Structs\hash_table_t.cs" />
+    <Compile Include="Structs\hmm_context_t.cs" />
+    <Compile Include="Structs\hmm_t.cs" />
+    <Compile Include="Structs\kws_detections_t.cs" />
+    <Compile Include="Structs\kws_detection_t.cs" />
+    <Compile Include="Structs\kws_keyphrase_t.cs" />
+    <Compile Include="Structs\kws_search_t.cs" />
+    <Compile Include="Structs\kws_seg_t.cs" />
+    <Compile Include="Structs\latlink_list_t.cs" />
+    <Compile Include="Structs\lineiter_t.cs" />
+    <Compile Include="Structs\listelem_alloc_t.cs" />
+    <Compile Include="Structs\logadd_t.cs" />
+    <Compile Include="Structs\logmath_t.cs" />
+    <Compile Include="Structs\mdef_entry_t.cs" />
+    <Compile Include="Structs\mdef_t.cs" />
+    <Compile Include="Structs\melfb_t.cs" />
+    <Compile Include="Structs\ms_mgau_model_t.cs" />
+    <Compile Include="Structs\noise_stats_t.cs" />
+    <Compile Include="Structs\phone_loop_renorm_t.cs" />
+    <Compile Include="Structs\phone_loop_search_t.cs" />
+    <Compile Include="Structs\phone_t.cs" />
+    <Compile Include="Structs\ph_lc_t.cs" />
+    <Compile Include="Structs\ph_rc_t.cs" />
+    <Compile Include="pocketsphinx.cs" />
+    <Compile Include="Structs\prespch_buf_t.cs" />
+    <Compile Include="Structs\ps_decoder_t.cs" />
+    <Compile Include="Structs\ps_latlink_t.cs" />
+    <Compile Include="Structs\ps_latnode_t.cs" />
+    <Compile Include="Structs\ps_lattice_t.cs" />
+    <Compile Include="Structs\ps_mgaufuncs_t.cs" />
+    <Compile Include="Structs\ps_mgau_t.cs" />
+    <Compile Include="Structs\ps_mllr_t.cs" />
+    <Compile Include="Structs\ps_searchfuncs_t.cs" />
+    <Compile Include="Structs\ps_search_t.cs" />
+    <Compile Include="Structs\ps_segfuncs_t.cs" />
+    <Compile Include="Structs\ps_seg_t.cs" />
+    <Compile Include="Structs\ptmr_t.cs" />
+    <Compile Include="Structs\ptm_fast_eval_t.cs" />
+    <Compile Include="Structs\ptm_mgau_t.cs" />
+    <Compile Include="Structs\ptm_topn_t.cs" />
+    <Compile Include="Structs\s2_semi_mgau_t.cs" />
+    <Compile Include="Structs\senone_t.cs" />
+    <Compile Include="Structs\stat_t.cs" />
+    <Compile Include="Structs\string_edge_e.cs" />
+    <Compile Include="Structs\tmat_t.cs" />
+    <Compile Include="Structs\trigger_adapter.cs" />
+    <Compile Include="Structs\vad_data_t.cs" />
+    <Compile Include="Structs\vq_feature_t.cs" />
+    <Compile Include="Structs\word_posn_t.cs" />
+    <Compile Include="Structs\xwdssid_t.cs" />
+    <Compile Include="tied_mgau_common.cs" />
+    <Compile Include="tmat.cs" />
+    <Compile Include="vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mdef.cs" />
+    <Compile Include="fixpoint.cs" />
+    <Content Include="Porting Notes.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
