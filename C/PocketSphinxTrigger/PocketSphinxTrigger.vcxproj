@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{546D8B53-3867-4FF5-B089-91E394C193FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PocketSphinxTrigger</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>psphinx_trigger</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32_WCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32_WCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="acmod.h" />
+    <ClInclude Include="agc.h" />
+    <ClInclude Include="bin_mdef.h" />
+    <ClInclude Include="bio.h" />
+    <ClInclude Include="bitvec.h" />
+    <ClInclude Include="byteorder.h" />
+    <ClInclude Include="case.h" />
+    <ClInclude Include="ckd_alloc.h" />
+    <ClInclude Include="cmdln_macro.h" />
+    <ClInclude Include="cmd_ln.h" />
+    <ClInclude Include="cmn.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="dict.h" />
+    <ClInclude Include="dict2pid.h" />
+    <ClInclude Include="err.h" />
+    <ClInclude Include="fe.h" />
+    <ClInclude Include="feat.h" />
+    <ClInclude Include="fe_internal.h" />
+    <ClInclude Include="fe_noise.h" />
+    <ClInclude Include="fe_prespch_buf.h" />
+    <ClInclude Include="fe_type.h" />
+    <ClInclude Include="fe_warp.h" />
+    <ClInclude Include="fe_warp_affine.h" />
+    <ClInclude Include="fe_warp_inverse_linear.h" />
+    <ClInclude Include="fe_warp_piecewise_linear.h" />
+    <ClInclude Include="filename.h" />
+    <ClInclude Include="fixpoint.h" />
+    <ClInclude Include="fsg_model.h" />
+    <ClInclude Include="genrand.h" />
+    <ClInclude Include="glist.h" />
+    <ClInclude Include="hash_table.h" />
+    <ClInclude Include="hmm.h" />
+    <ClInclude Include="kws_detections.h" />
+    <ClInclude Include="kws_search.h" />
+    <ClInclude Include="listelem_alloc.h" />
+    <ClInclude Include="logmath.h" />
+    <ClInclude Include="mdef.h" />
+    <ClInclude Include="mmio.h" />
+    <ClInclude Include="ms_gauden.h" />
+    <ClInclude Include="ms_mgau.h" />
+    <ClInclude Include="ms_senone.h" />
+    <ClInclude Include="phone_loop_search.h" />
+    <ClInclude Include="pio.h" />
+    <ClInclude Include="pocketsphinx.h" />
+    <ClInclude Include="pocketsphinx_export.h" />
+    <ClInclude Include="pocketsphinx_internal.h" />
+    <ClInclude Include="prim_type.h" />
+    <ClInclude Include="profile.h" />
+    <ClInclude Include="psphinx_trigger.h" />
+    <ClInclude Include="ps_lattice.h" />
+    <ClInclude Include="ps_lattice_internal.h" />
+    <ClInclude Include="ps_mllr.h" />
+    <ClInclude Include="ps_search.h" />
+    <ClInclude Include="ptm_mgau.h" />
+    <ClInclude Include="s2_semi_mgau.h" />
+    <ClInclude Include="s3types.h" />
+    <ClInclude Include="sphinxbase_export.h" />
+    <ClInclude Include="sphinx_config.h" />
+    <ClInclude Include="strfuncs.h" />
+    <ClInclude Include="tied_mgau_common.h" />
+    <ClInclude Include="tmat.h" />
+    <ClInclude Include="vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="acmod.c" />
+    <ClCompile Include="agc.c" />
+    <ClCompile Include="bin_mdef.c" />
+    <ClCompile Include="bio.c" />
+    <ClCompile Include="case.c" />
+    <ClCompile Include="ckd_alloc.c" />
+    <ClCompile Include="cmd_ln.c" />
+    <ClCompile Include="cmn.c" />
+    <ClCompile Include="cmn_live.c" />
+    <ClCompile Include="dict.c" />
+    <ClCompile Include="dict2pid.c" />
+    <ClCompile Include="dtoa.c" />
+    <ClCompile Include="err.c" />
+    <ClCompile Include="feat.c" />
+    <ClCompile Include="fe_interface.c" />
+    <ClCompile Include="fe_noise.c" />
+    <ClCompile Include="fe_prespch_buf.c" />
+    <ClCompile Include="fe_sigproc.c" />
+    <ClCompile Include="fe_warp.c" />
+    <ClCompile Include="fe_warp_affine.c" />
+    <ClCompile Include="fe_warp_inverse_linear.c" />
+    <ClCompile Include="fe_warp_piecewise_linear.c" />
+    <ClCompile Include="filename.c" />
+    <ClCompile Include="genrand.c" />
+    <ClCompile Include="glist.c" />
+    <ClCompile Include="hash_table.c" />
+    <ClCompile Include="hmm.c" />
+    <ClCompile Include="kws_detections.c" />
+    <ClCompile Include="kws_search.c" />
+    <ClCompile Include="lda.c" />
+    <ClCompile Include="listelem_alloc.c" />
+    <ClCompile Include="logmath.c" />
+    <ClCompile Include="mdef.c" />
+    <ClCompile Include="mmio.c" />
+    <ClCompile Include="ms_gauden.c" />
+    <ClCompile Include="ms_mgau.c" />
+    <ClCompile Include="ms_senone.c" />
+    <ClCompile Include="phone_loop_search.c" />
+    <ClCompile Include="pio.c" />
+    <ClCompile Include="pocketsphinx.c" />
+    <ClCompile Include="PocketSphinxTrigger.cpp" />
+    <ClCompile Include="profile.c" />
+    <ClCompile Include="psphinx_trigger.cpp" />
+    <ClCompile Include="ps_lattice.c" />
+    <ClCompile Include="ps_mllr.c" />
+    <ClCompile Include="ptm_mgau.c" />
+    <ClCompile Include="s2_semi_mgau.c" />
+    <ClCompile Include="strfuncs.c" />
+    <ClCompile Include="tmat.c" />
+    <ClCompile Include="vector.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

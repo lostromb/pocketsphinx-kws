@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="agc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bin_mdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitvec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="byteorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="case.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ckd_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_ln.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmdln_macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dict2pid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_prespch_buf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_warp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_warp_affine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_warp_inverse_linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_warp_piecewise_linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filename.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fixpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fsg_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genrand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hmm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kws_detections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kws_search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listelem_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mmio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_gauden.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_mgau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ms_senone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phone_loop_search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pocketsphinx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pocketsphinx_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pocketsphinx_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prim_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_lattice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_lattice_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_mllr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ps_search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="psphinx_trigger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ptm_mgau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="s2_semi_mgau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="s3types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sphinx_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sphinxbase_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tied_mgau_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tmat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PocketSphinxTrigger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="acmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bin_mdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="case.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ckd_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_ln.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmn_live.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dict2pid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dtoa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="err.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_noise.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_prespch_buf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_sigproc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_warp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_warp_affine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_warp_inverse_linear.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_warp_piecewise_linear.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="feat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filename.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="genrand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hmm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kws_detections.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kws_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lda.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listelem_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logmath.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mmio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_gauden.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_mgau.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ms_senone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phone_loop_search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pocketsphinx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="profile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ps_lattice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ps_mllr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ptm_mgau.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="s2_semi_mgau.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strfuncs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="psphinx_trigger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
